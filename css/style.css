@@ -1,156 +1,17 @@
-.container {
-  max-width: 1140px;
-}
+/* Error: Expected ".
+ *    ,
+ * 85 |     font-style: italic";
+ *    |                         ^
+ *    '
+ *   sass\style.scss 85:25  root stylesheet */
 
-h1 {
-  font-size: 30px;
-  color: #fff;
-  font-style: italic;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Expected ".\a    \2577 \a 85 \2502      font-style: italic";\d\a    \2502                          ^\a    \2575 \a   sass\\style.scss 85:25  root stylesheet';
 }
-
-h2 {
-  font-size: 35px;
-  color: black;
-  text-align: center;
-}
-
-/* header */
-.splash {
-  background-image: url(https://i.postimg.cc/sgMzs437/1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  text-align: center;
-}
-
-.menu {
-  list-style-type: none;
-  display: inline-block;
-  text-align: right;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #fff;
-  padding: 0 20px;
-  margin: 0;
-  font-size: 12px;
-}
-
-.menu li {
-  display: inline-block;
-}
-
-.navbar .container {
-  display: flex;
-}
-
-.logo-golden {
-  font-family: "Lobster", sans-serif;
-  font-size: 30px;
-  font-style: italic;
-  color: yellow;
-  font-weight: 300;
-}
-
-.splash-inner {
-  position: absolute;
-  padding: 40px;
-  top: 30px;
-  width: 100%;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.splash-inner .h2 {
-  color: #fff;
-}
-
-.button {
-  padding: 10px 20px;
-  color: #fff;
-  background-color: rgb(126, 126, 75);
-  border: none;
-  font-weight: 400;
-}
-
-.portfolio {
-  background-color: #eff2f5;
-}
-
-@media (max-width: 576px) {
-  h1 {
-    font-size: 25px;
-  }
-}
-@media (max-width: 576px) {
-  h2 {
-    font-size: 25px;
-  }
-}
-.services .pt-5 .pb-5 {
-  color: grey;
-  font-style: italic;
-  font-size: 20px;
-  text-align: center;
-}
-
-.services .card {
-  border: none;
-}
-
-.services {
-  text-align: center;
-  padding: 20px 60px;
-}
-
-.services p {
-  color: grey;
-}
-
-.services .card-image i {
-  color: rgb(223, 201, 8);
-  font-size: 24px;
-}
-
-.portfolio {
-  background-color: #eff2f5;
-  text-align: center;
-}
-
-.portfolio .portfolio-subtext {
-  color: grey;
-  font-style: italic;
-  font-size: 20px;
-}
-
-h5 {
-  font-weight: bold;
-}
-
-.portfolio .card-body p {
-  font-style: italic;
-  color: grey;
-}
-
-.footer .footer-icon {
-  font-size: 25px;
-  color: grey;
-  display: inline-block;
-}
-
-.footer .list-inline {
-  list-style-type: none;
-  display: inline-block;
-}
-
-.footer .row {
-  display: flex;
-}
-
-.footer .col-md-9 {
-  display: inline-block;
-}
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLGlCQUFBO0FDQUo7O0FES0E7RUFDSSxlQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0FDRko7O0FES0E7RUFDSSxlQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0FDRko7O0FESUEsV0FBQTtBQUNBO0VBQ0ksMERBQUE7RUFDQSxzQkFBQTtFQUNBLDJCQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxxQkFBQTtFQUNBLHFCQUFBO0VBQ0EsaUJBQUE7QUNESjs7QURJQTtFQUNJLHFCQUFBO0VBQ0EsV0FBQTtFQUNBLGVBQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtBQ0RKOztBRElBO0VBQ0kscUJBQUE7QUNESjs7QURLQTtFQUNJLGFBQUE7QUNGSjs7QURLQTtFQUNJLGtDQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGdCQUFBO0FDRko7O0FES0E7RUFDSSxrQkFBQTtFQUNBLGFBQUE7RUFDQSxTQUFBO0VBQ0EsV0FBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsZ0NBQUE7QUNGSjs7QURLQTtFQUNJLFdBQUE7QUNGSjs7QURLQTtFQUNJLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLG1DQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0FDRko7O0FES0E7RUFDSSx5QkFBQTtBQ0ZKOztBREtBO0VBQ0k7SUFDSSxlQUFBO0VDRk47QUFDRjtBREtBO0VBQ0k7SUFDSSxlQUFBO0VDSE47QUFDRjtBRE1BO0VBQ0ksV0FBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0FDSko7O0FET0E7RUFDSSxZQUFBO0FDSko7O0FET0E7RUFDSSxrQkFBQTtFQUNBLGtCQUFBO0FDSko7O0FET0E7RUFDSSxXQUFBO0FDSko7O0FET0E7RUFDSSx1QkFBQTtFQUNBLGVBQUE7QUNKSjs7QURPQTtFQUNJLHlCQUFBO0VBQ0Esa0JBQUE7QUNKSjs7QURPQTtFQUNJLFdBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7QUNKSjs7QURPQTtFQUNJLGlCQUFBO0FDSko7O0FET0E7RUFDSSxrQkFBQTtFQUNBLFdBQUE7QUNKSjs7QURPQTtFQUNJLGVBQUE7RUFDQSxXQUFBO0VBQ0EscUJBQUE7QUNKSjs7QURPQTtFQUNJLHFCQUFBO0VBQ0EscUJBQUE7QUNKSjs7QURPQTtFQUNJLGFBQUE7QUNKSjs7QURPQTtFQUNJLHFCQUFBO0FDSkoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
