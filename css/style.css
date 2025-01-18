@@ -1,9 +1,9 @@
-/* Error: Expected ".
- *    ,
- * 85 |     font-style: italic";
- *    |                         ^
- *    '
- *   sass\style.scss 85:25  root stylesheet */
+/* Error: expected "{".
+ *     ,
+ * 170 | >>>>>>> 01f6520b883af81d6027eed5ee10a7af42d42609
+ *     |                                                 ^
+ *     '
+ *   sass\style.scss 170:49  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: Expected ".\a    \2577 \a 85 \2502      font-style: italic";\d\a    \2502                          ^\a    \2575 \a   sass\\style.scss 85:25  root stylesheet';
+  content: 'Error: expected "{".\a     \2577 \a 170 \2502  >>>>>>> 01f6520b883af81d6027eed5ee10a7af42d42609\d\a     \2502                                                  ^\a     \2575 \a   sass\\style.scss 170:49  root stylesheet';
 }
